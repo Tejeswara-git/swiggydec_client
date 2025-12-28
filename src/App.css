@@ -1,0 +1,373 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navbar-background);
+  padding: 1rem 2rem;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+}
+
+.navbar-brand h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-link {
+  margin: 0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color var(--transition-speed);
+}
+
+.navbar-link:hover {
+  color: var(--primary-color);
+}
+
+/* Product Page Styles */
+.product-page {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+.product-container {
+  padding: 2rem;
+}
+
+.firm-name {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: var(--card-background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 1rem;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.product-price {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* Main Page Styles */
+.main-page {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+.hero-section {
+  padding: 2rem 0;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  text-align: center;
+  color: var(--light-text-color);
+}
+
+.vendor-section {
+  padding: 2rem 0;
+  background-color: var(--card-background);
+}
+
+.firm-section {
+  padding: 2rem 0;
+  background-color: var(--background-color);
+}
+
+/* Item Display Styles */
+.item-display {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding-right: 100px;
+}
+
+.item-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.item-card {
+  background: var(--card-background);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed);
+  flex: 0 0 200px;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Vendor Display Styles */
+.vendor-display {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.vendor-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.nav-arrow {
+  cursor: pointer;
+  transition: color var(--transition-speed);
+}
+
+.nav-arrow:hover {
+  color: var(--primary-color);
+}
+
+.vendor-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.vendor-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.vendor-card {
+  background: var(--card-background);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed);
+  flex: 0 0 250px;
+}
+
+.vendor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.vendor-name {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.vendor-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Firm Display Styles */
+.firm-display {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.firm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.firm-card {
+  background: var(--card-background);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed),
+    box-shadow var(--transition-speed);
+}
+
+.firm-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.firm-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.firm-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.firm-info {
+  padding: 1rem;
+}
+
+.firm-name {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.firm-region {
+  margin: 0;
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+/* Region Filter Styles */
+.region-fil {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.region-fil button {
+  background-color: #ff7e8b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.region-fil button:hover {
+  background-color: #e66b7a;
+  transform: translateY(-2px);
+}
+
+.region-fil button:active {
+  transform: translateY(0);
+}
+
+.region-fil button.active {
+  background-color: #d65a6a;
+  box-shadow: 0 0 10px rgba(255, 126, 139, 0.5);
+}
+
+/* Loading Section Styles */
+.loading-section {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-links {
+    margin-top: 1rem;
+  }
+
+  .region-fil {
+    gap: 0.5rem;
+  }
+
+  .region-fil button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .firm-grid,
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .hero-section,
+  .vendor-section,
+  .firm-section {
+    padding: 1rem 0;
+  }
+}
+
+.nav-arrow-icon {
+  font-size: 40px;
+}
+
+.firm-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.back-button:hover {
+  background-color: #00b38a;
+}

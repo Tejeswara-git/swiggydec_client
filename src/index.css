@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #00CC99;
+  --secondary-color: #EB2D8C;
+  --text-color: #333;
+  --background-color: #f4f4f9;
+  --card-background: #ffffff;
+  --navbar-background: #ffffff;
+  --footer-background: #333;
+  --light-text-color: #ffffff;
+  --font-family: 'Poppins', sans-serif;
+  --border-radius: 8px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s ease;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
